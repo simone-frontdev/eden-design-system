@@ -1,3 +1,4 @@
+![Eden](https://i.ibb.co/Mg48fKG/New-Project-24.png)
 # Eden Design System
 
 React components library with Storybook and Styled-Components.
