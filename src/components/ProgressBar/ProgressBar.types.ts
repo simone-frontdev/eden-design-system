@@ -1,5 +1,5 @@
-export interface ProgressBarProps {
-    percent: number
-}
+type ProgressBarProps = {
+  percentage: number;
+};
 
-export default ProgressBarProps
+export default ProgressBarProps;

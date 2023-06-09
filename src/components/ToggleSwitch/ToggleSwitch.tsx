@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ToggleProps from "./SwitchToggle.types";
-import {ToggleContainer, ToggleSlider} from "./SwitchToggle.style";
+import ToggleSwitchProps from "./ToggleSwitch.types";
+import {ToggleSwitchContainer, ToggleSwitchSlider} from "./ToggleSwitch.style";
 
-const Toggle: React.FC<ToggleProps> = ({ onChange, checked = false }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ onChange, checked = false }) => {
   const [isChecked, setIsChecked] = useState<boolean>(checked);
 
   const handleToggle = (): void => {
@@ -11,10 +11,10 @@ const Toggle: React.FC<ToggleProps> = ({ onChange, checked = false }) => {
   };
 
   return (
-    <ToggleContainer onClick={handleToggle} isChecked={isChecked}>
-      <ToggleSlider isChecked={isChecked} />
-    </ToggleContainer>
+    <ToggleSwitchContainer onClick={handleToggle} isChecked={isChecked}>
+      <ToggleSwitchSlider isChecked={isChecked} />
+    </ToggleSwitchContainer>
   );
 };
 
-export default Toggle;
+export default ToggleSwitch;

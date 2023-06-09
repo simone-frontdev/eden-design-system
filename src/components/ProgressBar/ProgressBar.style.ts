@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {fonts} from "../../shared/fonts";
 import {color} from "../../shared/colors";
 
 const StyledProgressBarContainer = styled.div`
@@ -9,18 +8,18 @@ const StyledProgressBarContainer = styled.div`
   position: relative;
 `;
 
-const StyledProgressBarPercent = styled.div<{percent: number}>`
+const StyledProgressBarPercent = styled.div<{percentage: number}>`
   height: 100%;
   border-radius: 10px;
-  background-color: ${color.secondary.secondary};
+  background-color: ${color.primary.primary};
   position: absolute;
   transition: width 0.3s ease-in-out;
   top: 0;
   left: 0;
-  width: ${props => props.percent}%;
+  width: ${props => props.percentage}%;
 `;
 
 export {
     StyledProgressBarContainer,
     StyledProgressBarPercent
-}
+};

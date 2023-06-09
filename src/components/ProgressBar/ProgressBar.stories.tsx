@@ -1,19 +1,30 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
+import {Meta, StoryObj} from '@storybook/react';
 import ProgressBar from "./ProgressBar";
-import ProgressBarProps from "./ProgressBar.types";
 
-
-export default {
-    title: 'Gleater/ProgressBar',
-    component: ProgressBar,
-    argTypes: {},
+const meta = {
+  title: 'Eden/ProgressBar',
+  component: ProgressBar,
 } as Meta<typeof ProgressBar>;
 
-const Template: Story<ProgressBarProps> = (args) => <ProgressBar {...args} />;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
-Default.args = {
-    percent: 10
+export const Empty: Story = {
+  args: {
+    percentage: 0
+  }
 };
 
+export const InProgress: Story = {
+  args: {
+    percentage: 40
+  }
+};
+
+export const Complete: Story = {
+  args: {
+    percentage: 100
+  }
+};
+
+export default meta;

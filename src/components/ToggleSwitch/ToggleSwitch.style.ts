@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {color} from "../../shared/colors";
 
-const ToggleContainer = styled.div<{ isChecked?: boolean }>`
+const ToggleSwitchContainer = styled.div<{ isChecked?: boolean }>`
   width: 60px;
   height: 30px;
   background-color: ${(props) => (props.isChecked ? color.secondary.secondary : color.grayScale.gray1)};
@@ -10,7 +10,7 @@ const ToggleContainer = styled.div<{ isChecked?: boolean }>`
   transition: background-color 0.3s;
 `;
 
-const ToggleSlider = styled.div<{ isChecked?: boolean }>`
+const ToggleSwitchSlider = styled.div<{ isChecked?: boolean }>`
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -22,6 +22,6 @@ const ToggleSlider = styled.div<{ isChecked?: boolean }>`
 `;
 
 export {
-  ToggleContainer,
-  ToggleSlider
+  ToggleSwitchContainer,
+  ToggleSwitchSlider
 }

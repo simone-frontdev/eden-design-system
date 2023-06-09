@@ -1,1 +1,2 @@
-export * from './SwitchToggle'
+export * from './ToggleSwitch'
+export * from './ProgressBar'

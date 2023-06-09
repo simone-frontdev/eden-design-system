@@ -1,6 +1,6 @@
-type ToggleProps = {
+type ToggleSwitchProps = {
   onChange: (isChecked: boolean) => void;
   checked?: boolean;
 };
 
-export default ToggleProps;
+export default ToggleSwitchProps;

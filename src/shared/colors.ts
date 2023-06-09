@@ -1,32 +1,32 @@
 export const color = {
     // Palette
     primary: {
-        light1: '#FFFBEC',
-        light2: '#FFE79A',
-        primary: '#FACE5E',
-        dark1: '#FFC400',
-        dark2: '#EE9D00'
+        light1: '#C3FFFA',
+        light2: '#71FFF4',
+        primary: '#D6E8DB',
+        dark1: '#109187',
+        dark2: '#004D47'
     },
     secondary: {
-        light1: '#F0F3DF',
-        light2: '#DAEBAF',
-        secondary: '#B9CB8B',
-        dark1: '#91A363',
-        dark2: '#5F7131'
+        light1: '#F0FDE5',
+        light2: '#C1D0B5',
+        secondary: '#94A388',
+        dark1: '#68755E',
+        dark2: '#3F4837'
     },
     grayScale: {
         white: '#FFFFFF',
-        floraWhite: '#FDFCFA',
+        floraWhite: '#ECFFFD',
         gray0: '#F1F0EA',
         gray1: '#F8F7F1',
         gray2: '#E1DBD6',
         gray3: '#BAC0CC',
         gray4: '#7E8490',
-        black: '#1D383A'
+        black: '#555958'
     },
     status: {
-        success: '#7EA51E',
-        warning: '#EE9D00',
-        error: '#ED694E'
+        success: '#B5DEAD',
+        warning: '#F4A261',
+        error: '#EF959C'
     }
 };
