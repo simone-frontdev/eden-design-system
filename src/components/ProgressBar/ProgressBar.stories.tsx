@@ -11,19 +11,22 @@ type Story = StoryObj<typeof meta>;
 
 export const Empty: Story = {
   args: {
-    percentage: 0
+    max: 100,
+    value: 0
   }
 };
 
 export const InProgress: Story = {
   args: {
-    percentage: 40
+    max: 100,
+    value: 40
   }
 };
 
 export const Complete: Story = {
   args: {
-    percentage: 100
+    max: 100,
+    value: 100
   }
 };
 

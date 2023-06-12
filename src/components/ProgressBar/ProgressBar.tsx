@@ -1,17 +1,16 @@
 import React from 'react'
 import {
-    StyledProgressBarContainer,
-    StyledProgressBarPercent
+  StyledProgressBarContainer
 } from './ProgressBar.style';
 import ProgressBarProps from "./ProgressBar.types";
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ percentage }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({max, value}) => {
 
-    return (
-        <StyledProgressBarContainer>
-            <StyledProgressBarPercent percentage={percentage} />
-        </StyledProgressBarContainer>
-    );
+  return (
+    <StyledProgressBarContainer>
+      <progress max={max} value={value}/>
+    </StyledProgressBarContainer>
+  );
 };
 
 export default ProgressBar;
